@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Jost Medium';
+    src: url(../types/Jost-Medium.ttf);
+}
+
+:root{
+    --main-color: #aa1916;
+    --main-type: 'Jost Medium';
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* font-family: ; -- escolher*/
+}
+
+html, body{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: black;
+
+}
+
+main{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+#page{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Divisão por secções comum a todas as adaptações*/
+#front_page{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+
+#gif_page{
+    left: -20px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+}
+
+/* Divisão por secções da página de navegação */
+#pagina_inicial_1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    display: flex;
+
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+
+#pagina_inicial_2{
+    top: 40em;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+
+#pagina_inicial_3{
+    top: 80em;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+
+/* Características dos icons componentes da página inicial */
+.icon_pagina_inicial{
+    height: 100px;
+    width: 120px;
+}
+
+.icon_pagina_inicial:hover{
+    transition: all 0.25s ease-in;
+    transform: scale(1.15);
+}
+
+
+/* Características dos elementos comuns a todas as adaptações */
+.eat_me{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    z-index: 10;
+}
+
+.gif{
+    position: absolute;
+    display: block;
+    width: 100vw;
+    z-index: 20;
+}
+
+
+/* Características do botão de hover de cada adaptação */
+#adp1_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1536px;
+    opacity: 1;
+}
+
+#adp1_eatme:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  
+} 
+
+#adp2_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1540px;
+    opacity: 1;
+}
+
+#adp2_eatme:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  
+} 
+
+#adp3_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1538px;
+    opacity: 1;
+}
+
+#adp3_eatme:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  
+} 
+
+#adp4_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1570px;
+    top: 30px;
+    left: -10px;
+
+}
+
+#adp4_eatme:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  
+} 
+
+#adp5_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1540px;
+
+}
+
+#adp5_eatme:hover{
+  transform: scale(1.1) translate(-1%, 0%);
+  transition: 0.3s;
+  
+} 
+
+#adp6_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1535px;
+    opacity: 0;
+
+}
+
+#adp6_eatme:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  opacity: 1;
+  
+} 
+
+#adp7_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1535px;
+    opacity: 0;
+
+}
+
+#adp7_eatme:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  opacity: 1;
+  
+} 
+
+#adp8_eatme{
+    position: relative;
+    display: block;
+    z-index: 30;
+    width: 1530px;
+
+}
+
+#adp8_eatme:hover{
+  transform: scale(1.1) translate(1%, -3%);
+  transition: 0.3s;
+  
+} 
+
+
+/* Características relativas ao botão de 'Start Over' final */
+#fim{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 2px grey;
+    border-radius: 120px;
+    z-index: 100;
+    margin-right: auto;
+    margin-left: 45%;
+    justify-content: center;
+    top: 400px;
+
+    animation-name: startover;
+    animation-delay: 40s;
+    animation-duration: 2s;
+}
+
+@keyframes startover{
+0% {top: -200px;}
+100% {top: 400px;}
+}
+
+#fim h1 {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--main-type);
+    color: black;
+
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 10%;
+    z-index: 100;
+
+}
+
+#fim:visited, #fim:link {
+    color: black;
+    text-decoration: none;
+}
+
+#fim:hover, #fim:hover h1{
+    /* mudar a cor */
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Características referentes ao botão de 'Full Screen' */
+.fullscreen{
+    width: 7%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.4s;
+    z-index: 80;
+}
+
+.fullscreen:hover {
+    transform: scale(1.5);
+}
+
+
+/* Características relativas ao popup de consentimento de cookies da página de navegação */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapper{
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 180px;
+    background-color: white;
+    padding: 1em;
+    padding-right: 0.8em;
+    z-index: 30;
+    text-align: center;
+    border-radius: 10px;
+    top: 350px ;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: cookie;
+    animation-duration: 2s;
+}
+
+
+@keyframes cookie{
+    0%   {top: -200px}
+    100% {top: 350px}
+}
+
+.wrapper.show{
+    border-style: solid;
+    border: black;
+    border-width: 8px;
+}
+
+.wrapper header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+} 
+
+
+header h2{
+    color:var(--main-color);
+    font-weight: 400;
+    font-family: var(--main-type);
+}
+
+.wrapper .data{
+    margin-top: 16px;
+}
+
+.wrapper .data p{
+    color: black;
+    font-size: 17px;
+    font-family: var(--main-type);
+    
+}
+
+.data p a{ 
+    color: var(--main-color); 
+    text-decoration: none;
+    font-family: var(--main-type);
+}
+
+.data p a:hover{
+    color: var(--main-color);
+}
+
+.wrapper .buttons{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+
+
+.buttons .button{
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 170px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: var(--main-type);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.buttons .button:hover{background-color: var(--main-color);} 
+
+button{
+    z-index: 100;
+}

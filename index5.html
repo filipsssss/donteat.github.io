@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="../assets/images/cookie_icon.png"> <!-- FAZER!! -->
+    <!-- informações para o browser -->
+    <meta name="author" content="Ana Campos, Cláudia Filipa Pedrosa, Inês Teixeira, Mª Beatriz Amaral">
+    <meta name="keywords" content="Game, Cookies, Popups"> <!-- REVER!! -->
+    <meta name="description" content=""> <!-- FAZER!! -->
+
+
+    <title>Adaptação 5 - Jogo Pixelizado</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <script src="assets/js/script5.js" defer></script>
+
+    <link 
+    rel="shortcut icon" 
+    href="assets/images/adaptacao_5_icon.png" 
+    type="image/x-icon">
+
+    <!-- símbolo do cookie - DEPOIS MUDAR -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <div id="page">
+
+        <main>
+            <!-- secção de página inicial com botão de "Eat Me" -->
+            <section id="front_page">
+                <img src="assets/images/adaptacao_5_frontpage.jpg" alt="página inicial da adaptação 5 - Jogo Pixelizado 'Alice in Wonderland'" class="eat_me">
+                <a href="#gif_page"><img src="assets/images/adaptacao_5_hover.png" alt="botão 5 - Jogo Pixelizado 'Alice in Wonderland'" id="adp5_eatme"></a>
+            </section>
+
+            <!-- secção da página com o gif da queda, dá origem aos pop-ups -->
+            <section id="gif_page">
+                <img src="assets/video/adp5_gif.gif" alt="gif da queda da Alice - Adaptação 5 - Jogo Pixelizado 'Alice in Wonderland'" class="gif">
+                <button onclick="openFullscreen()">
+                    <img class="fullscreen" src="assets/images/full_screen.png">
+                </button>
+
+                <div id="fim">
+                    <a href="../index.html">
+                        <h1>Start Over?</h1>
+                    </a>
+                </div>
+            </section>             
+        </main>
+
+    </div>
+
+
+</body>
+</html>
